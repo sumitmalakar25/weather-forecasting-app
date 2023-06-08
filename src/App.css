@@ -1,38 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap");
+
+.appName {
+  font-size: 3rem;
+  color: rgb(125, 125, 236);
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  text-shadow: 2px 2px 3px black;
+}
+
+/* app box */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: start;
+  width: 400px;
+  min-height: 480px;
+  background-color: rgba(226, 226, 226, 0.2);
+  background: url("./components/assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  padding-top: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.App-link {
-  color: #61dafb;
+/* City Search  */
+.Scity {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  outline: none;
+  border-radius: 22px;
+  background-color: white;
+  background-position: 10px 10px;
+  padding: 10px 20px 10px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.Scity:focus {
+  width: 60%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* city name */
+.cityName {
+  margin-top: 38px;
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+/* current date */
+.date {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: -5px;
+  font-family: "Dosis", sans-serif;
+}
+
+/* weather icon and temp */
+.Dres {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1e2432;
+  font-family: "Dosis", sans-serif;
+  margin-top: 40px;
+  text-align: center;
+}
+.deg {
+  font-size: 2rem;
+  font-family: "Dosis", sans-serif;
+}
+
+/* weather description and wind speed */
+.des-wind {
+  font-weight: 500;
+  margin-left: 17px;
+  font-family: "Dosis", sans-serif;
+}
+
+.result {
+  border: 1px solid rgb(255, 255, 255);
+  background: url("./components/assets/back.png");
+  background-size: cover;
+  background-position: 29px 20px;
 }
