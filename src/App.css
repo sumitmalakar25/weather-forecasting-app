@@ -12,7 +12,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 400px;
   min-height: 480px;
   background-color: rgba(226, 226, 226, 0.2);
